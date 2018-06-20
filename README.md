@@ -1,22 +1,35 @@
-**Soho House Reception Scheduler**
+# reception-scheduler
 
-Soho House runs several private Membership Clubs around the world. To enter the club, you must scan your card at reception.
+This is a submission for a technical interview.
 
-We'd like you to build a basic scheduling system to help manage the rota for the Shoreditch House reception desk. The system should allow Soho House employees to view and book shifts.
+I wanted to tackle this from a pure Ruby angle. App code lies under `lib/` following the structure:
 
-## Deliverables
+```
+lib/
+├── employee.rb
+├── shift.rb
+└── soho_house.rb
+```
 
-For the purposes of this task, this system can be an API, a webapp, a CLI or any form of software you deem appropriate to solve the problem. Consider this task as a feature from the business that requires production quality code. Please spend no longer than 4 hours on this task. 
+This little program mimics a domain where the following rules are honoured:
 
-## Rules
-
+```
 - Shoreditch House is open from 7am until 3am, 7 days a week
 - There is only one member of staff on shift at a time
 - Shifts can be a maximum of 8 hours long
 - An employee can work a maximum of 40 hours per week
+```
 
-## Next steps
+## Installation
 
-After the technical assessment, we will invite you in to the office to go through your solution, so please note down any questions or assumptions you may have along the way.
+In order to run the program you need to install
 
-## Submission
+- [Ruby `2.3.0`](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
+- [Bundler](https://bundler.io/)
+- [Git](https://git-scm.com/)
+
+To run the program:
+
+1) Clone this repository
+2) `$ bundle install`
+3) `$ ruby main.rb`

@@ -1,5 +1,6 @@
 require "pry"
 require "active_support/all"
+require "colorize"
 
 Dir["./lib/**/**.rb"].each { |filename| require(filename) }
 

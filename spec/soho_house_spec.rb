@@ -46,7 +46,16 @@ RSpec.describe SohoHouse, type: :entity do
     end
 
     context "when the employee has valid shifts" do
+      let(:employee) do
+        mario = Employee.new
+        start = 1.day.from_now.change(hour: 9)
+        mario.add!(shift: Shift.new(start: start, finish: start + 5.hours))
+        mario
+      end
+
       it "adds the employee to the employees collection" do
+        subject.add!(employee: employee)
+        expect(subject.employees).to include(employee)
       end
     end
   end
