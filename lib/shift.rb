@@ -1,6 +1,6 @@
 class Shift
-  attr_accessor :start, :finish
   MAX = 8
+  attr_accessor :start, :finish
 
   def initialize(start:, finish:)
     @start  = start
