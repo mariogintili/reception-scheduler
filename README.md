@@ -1,5 +1,7 @@
 # reception-scheduler
 
+![](https://raw.githubusercontent.com/mariogintili/reception-scheduler/master/demo.png)
+
 This is a submission for a technical interview.
 
 I wanted to tackle this from a pure Ruby angle. App code lies under `lib/` following the structure:
